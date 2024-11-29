@@ -96,3 +96,7 @@ def generate_pdf(request, employee_id):
     p.save()
     
     return response
+
+
+def test_404(request):
+    return render(request, '404.html', status=404)
