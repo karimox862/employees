@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-!xtd#xi569p9oqle()#!9v4c#l%o#f=)h)z9bc^2_f@^tkv7ug
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -125,3 +126,20 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+
+LOGOUT_REDIRECT_URL='/login/'
+LOGIN_URL = '/login/'  # URL to redirect non-logged-in users
+
+
+# Email settings for development (Console backend for testing)
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# For production, use a real email backend (like SMTP)
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.example.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'your_email@example.com'
+# EMAIL_HOST_PASSWORD = 'your_password'
+# EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'webmaster@example.com'
