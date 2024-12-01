@@ -13,6 +13,28 @@ This Django-based web application allows users to manage employee data effective
 - Dynamic content display with clear formatting for dates, currency, and other fields.  
 - Download functionality directly integrated into the data table with a "Download PDF" button.
 
+## Password Reset Feature
+
+As part of improving user authentication, I have added a **Password Reset** feature. The feature includes the following pages:
+
+- **Password Reset Request Page**: Users can request a password reset by entering their email address.
+- **Password Reset Email**: A link is sent to the user's email to reset the password.
+- **Password Reset Confirmation Page**: After clicking the link, users can enter and confirm their new password.
+
+Here are some images of the password reset pages:
+
+### Password Reset Request Page:
+![reset password](https://github.com/user-attachments/assets/2c8c4352-8016-4aaf-9e8f-0ca8a94b318f)
+
+
+### Password Reset Email:
+![email sent](https://github.com/user-attachments/assets/271a4578-3f5d-4c65-9196-25fe8fa4164e)
+
+
+### Password Reset Confirmation Page:
+![new password](https://github.com/user-attachments/assets/f7b497c4-9bf6-47f7-84a6-fa54c1c9a4ae)
+
+
 ## Technologies Used
 
 - **Backend**: Django with SQLite  
