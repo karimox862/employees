@@ -27,3 +27,7 @@ Clone the repository, set up the environment, and migrate the database. The appl
 Enhanced styling for the employee table and forms.
 Support for additional file formats (e.g., Excel, CSV).
 Role-based access control for managing employee data.
+
+
+![Screenshot from 2024-12-01 21-51-58](https://github.com/user-attachments/assets/92c8669d-8ed6-4029-b5df-113c59c20030)
+
