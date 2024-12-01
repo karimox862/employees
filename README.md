@@ -1,5 +1,5 @@
 **Employee Management Dashboard with PDF Report Generation
-**
+**\\
 This Django-based web application allows users to manage employee data effectively. Key features include:
 
 Employee Data Table: Displays a sortable, searchable table of employees with details such as name, position, office, age, start date, and salary.
