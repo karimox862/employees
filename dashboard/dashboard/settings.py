@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!xtd#xi569p9oqle()#!9v4c#l%o#f=)h)z9bc^2_f@^tkv7ug'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -133,13 +133,12 @@ LOGIN_URL = '/login/'  # URL to redirect non-logged-in users
 
 
 # Email settings for development (Console backend for testing)
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # For production, use a real email backend (like SMTP)
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.example.com'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'your_email@example.com'
-# EMAIL_HOST_PASSWORD = 'your_password'
-# EMAIL_USE_TLS = True
-# DEFAULT_FROM_EMAIL = 'webmaster@example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ko89karim@gmail.com'
+EMAIL_HOST_PASSWORD = 'YOUR_PASSWORD_HERE'
